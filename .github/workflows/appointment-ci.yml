@@ -30,7 +30,7 @@ jobs:
           tenant: ${{ secrets.AZURE_TENANT_ID }}
           registry: acrhclwesteurope          # ACR name without .azurecr.io
           repository: appointment-service
-          git_access_token: ${{ secrets.GITHUB_TOKEN }}
+          git_access_token: ${{ secrets.GH_PAT }}
           image: appointment-service     # repository name
           tag: ${{ github.sha }}         # commit SHA
           folder: appointment            # folder where your Dockerfile and service.js are
