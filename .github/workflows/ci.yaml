@@ -31,6 +31,7 @@ jobs:
             -t ${{ secrets.ACR_LOGIN_SERVER }}/appointment:${{ github.sha }} \
             appointment/
 
+
       - name: Push Docker image
         run: |
           docker push ${{ secrets.ACR_LOGIN_SERVER }}/appointment:${{ github.sha }}
