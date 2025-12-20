@@ -1,4 +1,4 @@
-name: Build and Push Docker Image to ACR
+name: Patient Build and Push Docker Image to ACR
 
 on:
   push:
