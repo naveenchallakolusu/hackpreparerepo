@@ -5,8 +5,8 @@ on:
     branches:
       - main
       - naga-kishore-patch
-    paths:
-      - 'terraform/**'
+    # paths:
+    #   - 'terraform/**'
   workflow_dispatch:
 
 permissions:
