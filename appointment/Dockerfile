@@ -1,7 +1,7 @@
 # Use the official Node.js LTS image
 FROM node:20-alpine
 
-# Set working directory
+# # Set working directory
 WORKDIR /usr/src/app
 
 COPY package*.json ./
