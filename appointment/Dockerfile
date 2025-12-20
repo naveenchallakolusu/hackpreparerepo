@@ -1,11 +1,8 @@
 FROM node:20-alpine
 
-WORKDIR /usr/src/app
+WORKDIR /appointment
 
-COPY package*.json ./
-
-RUN npm install --omit=dev
-
+RUN npm install express
 COPY appointment-service.js .
 
 EXPOSE 3001
