@@ -5,10 +5,9 @@ on:
     branches:
       - main
       - naga-kishore-patch
-    # paths:
-    #   - 'appointment/**'
-    #   - 'Dockerfile'
-    #   - '.github/workflows/**'
+    paths:
+      - 'appointment/**'
+      - '.github/workflows/appointment/**'
   workflow_dispatch:
 
 permissions:
