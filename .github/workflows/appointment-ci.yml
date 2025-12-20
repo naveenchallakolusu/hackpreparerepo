@@ -5,6 +5,8 @@ on:
     branches:
       - main
       - naga-kishore-patch
+    paths:
+      - 'appointment/**'
 
 jobs:
   build:
