@@ -13,10 +13,6 @@ resource "azurerm_kubernetes_cluster" "aks" {
     type       = "VirtualMachineScaleSets"
   }
 
-  identity {
-    type = "SystemAssigned"
-  }
-
   network_profile {
     network_plugin = "azure"
     load_balancer_sku = "standard"
