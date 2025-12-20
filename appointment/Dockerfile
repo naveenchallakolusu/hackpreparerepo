@@ -1,21 +1,20 @@
+# Use the official Node.js LTS image
+FROM node:20-alpine
+
+# Set working directory
+WORKDIR /usr/src/app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install --production
+
+# Copy the service code
+COPY appointment-service.js ./appointment-service.js
+
 # Expose the port
 EXPOSE 3001
 
 # Start the service
-CMD ["npm", "start"]
-
-
-FROM node:20-alpine
-
-WORKDIR /usr/src/app
-
-COPY package*.json ./
-
-RUN npm install --production
-
-# FIX: file path is relative to appointment/
-COPY appointment-service.js ./appointment-service.js
-
-EXPOSE 3001
-
-CMD ["npm", "start"]
+CMD ["node", "appointment-service.js"]
