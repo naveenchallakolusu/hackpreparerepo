@@ -1,0 +1,2 @@
+environment = "hcl"
+region      = "eastus"
