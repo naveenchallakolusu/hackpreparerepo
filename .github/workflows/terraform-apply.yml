@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      # - naga-kishore-patch
+      - naga-kishore-patch
     paths:
       - 'terraform/**'
   workflow_dispatch:
