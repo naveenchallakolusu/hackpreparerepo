@@ -5,3 +5,6 @@ variable "environment" {
 variable "region" {
   type = string
 }
+variable "acr_sku" {
+  type    = string
+}
