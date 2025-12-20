@@ -1,0 +1,3 @@
+apiVersion: v2
+name: appointment
+description: A sample Helm chart for a Kubernetes application
