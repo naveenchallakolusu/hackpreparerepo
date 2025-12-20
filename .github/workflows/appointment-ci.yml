@@ -1,4 +1,4 @@
-name: Build and Push Docker Image to ACR
+name: Appointment - Build and Push Docker Image to ACR
 
 on:
   push:
