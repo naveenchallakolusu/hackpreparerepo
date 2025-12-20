@@ -1,19 +1,10 @@
-# Use the official Node.js LTS image
 FROM node:20-alpine
 
-# # Set working directory
-WORKDIR /usr/src/app
+WORKDIR /appointment
 
-COPY package*.json ./
+RUN npm install express
+COPY appointment-service.js .
 
-# Install dependencies
-RUN npm install --production
-
-# Copy the service code
-COPY appointment/appointment-service.js ./appointment-service.js
-
-# Expose the port
 EXPOSE 3001
 
-# Start the service
-CMD ["npm", "start"]
+CMD ["node", "appointment-service.js"]
